@@ -173,6 +173,12 @@
       flex: 0 0 380px;
     }
   }
+
+  .popup {
+    &__iframe-inner {
+      max-width: 80vw;
+    }
+  }
 }
 
 @media (max-width: 910px) {
@@ -459,6 +465,13 @@
     }
     &__link {
       text-align: center;
+    }
+  }
+
+  .popup {
+    &__iframe-inner {
+      max-width: 90vw;
+      max-height: 30vh;
     }
   }
 }
