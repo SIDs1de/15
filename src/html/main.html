@@ -12,34 +12,34 @@
       <div class="header__inner">
         <ul class="header__list">
           <li class="header__item">
-            <a class="header__item-link wow animate__animated animate__zoomIn" href="#">Обо мне</a>
+            <a class="header__item-link wow animate__animated animate__zoomIn" href="#" data-goto=".about">Обо мне</a>
           </li>
           <li class="header__item">
-            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.1s" href="#">Мои
+            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.1s" href="#" data-goto=".projects">Мои
               проекты</a>
           </li>
           <li class="header__item">
-            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.2s" href="#">Кому
+            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.2s" href="#" data-goto=".who">Кому
               подходит</a>
           </li>
           <li class="header__item">
-            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.3s"
+            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.3s" data-goto=".discount"
               href="#">Промокод</a>
           </li>
           <li class="header__item">
-            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.4s"
+            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.4s" data-goto=".bot"
               href="#">Обучение</a>
           </li>
           <li class="header__item">
-            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.5s"
+            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.5s" data-goto=".program"
               href="#">Программа</a>
           </li>
           <li class="header__item">
-            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.6s" href="#">Гайд по
+            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.6s" href="#" data-goto=".guide">Гайд по
               урокам</a>
           </li>
           <li class="header__item">
-            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.7s"
+            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.7s" data-goto=".results"
               href="#">Результаты</a>
           </li>
         </ul>
@@ -162,7 +162,7 @@
     </div>
   </section>
 
-  <!-- <section class="projects page__projects">
+  <section class="projects page__projects">
     <div class="container">
       <h2 class="projects__title title wow animate__animated animate__fadeIn">
         Мои проекты
@@ -262,10 +262,7 @@
         <ul class="who__list wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
           <li class="who__item">
             <div class="who__icon-wrapper">
-              <picture>
-                <source srcset="images/who/1.webp" type="image/webp">
-                <img class="who__icon" src="images/who/1.png" alt="">
-              </picture>
+              <img class="who__icon" src="images/who/1.svg" alt="">
             </div>
             <p class="who__item-title">
               Менджерам
@@ -276,10 +273,7 @@
           </li>
           <li class="who__item">
             <div class="who__icon-wrapper">
-              <picture>
-                <source srcset="images/who/1.webp" type="image/webp">
-                <img class="who__icon" src="images/who/1.png" alt="">
-              </picture>
+              <img class="who__icon" src="images/who/1.svg" alt="">
             </div>
             <p class="who__item-title">
               Стартаперам
@@ -290,10 +284,7 @@
           </li>
           <li class="who__item">
             <div class="who__icon-wrapper">
-              <picture>
-                <source srcset="images/who/1.webp" type="image/webp">
-                <img class="who__icon" src="images/who/1.png" alt="">
-              </picture>
+              <img class="who__icon" src="images/who/1.svg" alt="">
             </div>
             <p class="who__item-title">
               Предпринимателям
@@ -315,8 +306,11 @@
             Скидка 50% по промокоду «SKYNET»
           </h2>
           <div class="discount__info-btns-wrapper">
-            <a class="discount__buy-btn" href="#">
+            <a class="discount__buy-btn discount__buy-btn--max-text" href="#">
               Купить курс сейчас
+            </a>
+            <a class="discount__buy-btn discount__buy-btn--mini-text" href="#">
+              Купить сейчас
             </a>
             <div class="discount__price">
               <p class="discount__price-false">30 000 ₽</p>
@@ -666,7 +660,7 @@
         </div>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
   @@include('scripts.html')
 </body>

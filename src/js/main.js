@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   const heads = document.querySelectorAll('.questions__head');
   const bodies = document.querySelectorAll('.questions__body');
-  const windowWidth = window.innerWidth;
+  const menuLinks = document.querySelectorAll('[data-goto]');
 
   const swiper = () => {
+    const windowWidth = document.documentElement.clientWidth;
     if (windowWidth > 1220) {
       const mySwiper = new Swiper('.about__swiper', {
         enabled: false,
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
       });
     } else {
+      console.log('sdfsd');
       const mySwiper = new Swiper('.about__swiper', {
         spaceBetween: 20,
         slidesPerView: 1,
@@ -51,10 +53,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
+  const navigation = () => {
+    menuLinks.forEach((menuLink) => {
+      menuLink.addEventListener('click', (e) => {
+        let gotoBlock = document.querySelector(menuLink.dataset.goto);
+        let gotoBlockValue =
+          gotoBlock.getBoundingClientRect().top + pageYOffset - 50;
+        window.scrollTo({
+          top: gotoBlockValue,
+          behavior: 'smooth',
+        });
+        e.preventDefault();
+      });
+    });
+  };
+
   const animations = () => {
     new WOW().init();
   };
   swiper();
   animations();
   accordion();
+  navigation();
 });

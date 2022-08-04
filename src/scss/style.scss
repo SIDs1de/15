@@ -9,6 +9,10 @@
 @import "animations";
 
 // Основная часть
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Gilroy";
   font-weight: 500;
@@ -411,6 +415,9 @@ body {
     background: #ffffff;
     border-radius: 45px;
     transition: all 0.3s;
+    &--mini-text {
+      display: none;
+    }
     &:hover {
       letter-spacing: 3px;
     }
@@ -596,6 +603,7 @@ body {
     right: 0;
     width: 200px;
     height: 240px;
+    z-index: 2;
   }
   &::after {
     content: "";
@@ -671,6 +679,15 @@ body {
       line-height: 150%;
       letter-spacing: 0.06em;
       color: #ffb321;
+    }
+    &--has-star {
+      &:before {
+        content: "";
+        width: 19px;
+        height: 19px;
+        transform: translateY(-50%);
+        background: url("../images/program/star.svg") center/contain no-repeat;
+      }
     }
     &::after {
       content: "";
