@@ -653,7 +653,7 @@ body {
     grid-gap: 40px 67px;
     margin-left: 65px;
     list-style-type: none;
-    counter-reset: num;
+    counter-reset: my-counter;
     align-items: center;
     justify-items: start;
   }
@@ -666,9 +666,9 @@ body {
       transform: scale(1.07);
     }
     &::before {
+      content: counter(my-counter);
       font-family: "Factor A";
-      content: counter(num);
-      counter-increment: num;
+      counter-increment: my-counter;
       display: inline-block;
       position: absolute;
       top: 50%;
