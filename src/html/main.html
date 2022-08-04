@@ -15,32 +15,35 @@
             <a class="header__item-link wow animate__animated animate__zoomIn" href="#" data-goto=".about">Обо мне</a>
           </li>
           <li class="header__item">
-            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.1s" href="#" data-goto=".projects">Мои
+            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.1s" href="#"
+              data-goto=".projects">Мои
               проекты</a>
           </li>
           <li class="header__item">
-            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.2s" href="#" data-goto=".who">Кому
+            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.2s" href="#"
+              data-goto=".who">Кому
               подходит</a>
           </li>
           <li class="header__item">
-            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.3s" data-goto=".discount"
-              href="#">Промокод</a>
+            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.3s"
+              data-goto=".discount" href="#">Промокод</a>
           </li>
           <li class="header__item">
             <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.4s" data-goto=".bot"
               href="#">Обучение</a>
           </li>
           <li class="header__item">
-            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.5s" data-goto=".program"
-              href="#">Программа</a>
+            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.5s"
+              data-goto=".program" href="#">Программа</a>
           </li>
           <li class="header__item">
-            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.6s" href="#" data-goto=".guide">Гайд по
+            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.6s" href="#"
+              data-goto=".guide">Гайд по
               урокам</a>
           </li>
           <li class="header__item">
-            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.7s" data-goto=".results"
-              href="#">Результаты</a>
+            <a class="header__item-link wow animate__animated animate__zoomIn" data-wow-delay="0.7s"
+              data-goto=".results" href="#">Результаты</a>
           </li>
         </ul>
       </div>
@@ -70,7 +73,7 @@
           </p>
           <div class="offer__btns-wrapper">
             <a class="offer__btn default-btn" href="#">принять участие</a>
-            <a class="offer__btn-video" href="#">Видео-рассказ<br>о программе курса</a>
+            <a class="offer__btn-video" href="#" data-open-pop="youtube-video">Видео-рассказ<br>о программе курса</a>
           </div>
         </div>
       </div>
@@ -661,6 +664,19 @@
       </div>
     </div>
   </footer>
+
+  <div class="popup popup__iframe" data-pop="youtube-video">
+    <div class="popup__inner popup__iframe-inner popup__inner--transparent">
+      <div class="popup__body popup__body-iframe">
+        <iframe class="popup__iframe" width="560" height="315" src="https://www.youtube.com/embed/uj0Dibq_bGs" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="popup__bg" data-close="youtube-video"></div>
+  </div>
 
   @@include('scripts.html')
 </body>
