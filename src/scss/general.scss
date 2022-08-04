@@ -1,0 +1,24 @@
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+}
+
+.default-btn {
+  display: inline-block;
+  padding: 35px 57px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16 * 100%);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(123.47deg, #886e55 19.9%, #a98a6c 58.78%, #886e55 80.1%);
+  border-radius: 45px;
+  text-align: center;
+  transition: all 0.5s;
+  &:hover {
+    box-shadow: 1px 1px 15px #886e55;
+    letter-spacing: 1.2px;
+  }
+}

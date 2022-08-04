@@ -1,0 +1,234 @@
+@media (max-width: 1220px) {
+  .container {
+    max-width: 910px;
+    padding: 0 15px;
+  }
+  .page {
+    &__header {
+      margin-bottom: 140px;
+    }
+  }
+  .header {
+    overflow-x: scroll;
+    &__list {
+      justify-content: start;
+    }
+    &__item {
+      flex: 0 0 auto;
+      &:last-child {
+        padding-right: 15px;
+      }
+    }
+  }
+  .offer {
+    padding-bottom: 600px;
+    &::before {
+      top: -120px;
+      width: 250px;
+      height: 380px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 277px;
+      height: 409px;
+      left: 0;
+      bottom: 50px;
+      background: url("../images/offer/icon-bg-2.png") center/contain no-repeat;
+    }
+    &__img-wrapper {
+      position: absolute;
+      bottom: 0px;
+      right: 0;
+    }
+    &__main {
+      margin-top: 0;
+      max-width: 600px;
+    }
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__btns-wrapper {
+      flex-direction: column;
+      align-items: start;
+    }
+    &__btn {
+      flex: 0 1 auto;
+      margin: 0 0 30px;
+    }
+    &__btn-video {
+      flex: 0 1 auto;
+    }
+  }
+
+  .about {
+    &__img-wrapper {
+      margin-left: 95px;
+      flex: 0 0 auto;
+      top: -30px;
+    }
+    &__swiper {
+    }
+    &__swiper-button-prev {
+      display: block;
+      width: 48px;
+      height: 48px;
+      background: url("../images/about/arrow.svg") center/contain no-repeat;
+      // left: -17px;
+      &:after {
+        content: "";
+      }
+    }
+    &__swiper-button-next {
+      display: block;
+      width: 48px;
+      height: 48px;
+      background: url("../images/about/arrow.svg") center/contain no-repeat;
+      transform: rotate(180deg);
+      // right: -17px;
+      &:after {
+        content: "";
+      }
+    }
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled {
+      opacity: 0;
+    }
+    &__swiper {
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  .container {
+    max-width: 420px;
+  }
+
+  .page {
+    &__offer {
+      margin-bottom: 150px;
+    }
+    &__header {
+      margin-bottom: 43px;
+    }
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .offer {
+    padding-bottom: 520px;
+    &::before,
+    &::after {
+      display: none;
+    }
+    &__title {
+      font-size: 30px;
+      line-height: 120%;
+      margin-bottom: 20px;
+      span {
+        margin: 0 5px;
+        &::after {
+          height: 36px;
+        }
+      }
+    }
+    &__man-name {
+      bottom: -20px;
+      right: 0;
+      left: 20px;
+    }
+    &__main {
+      max-width: 100%;
+    }
+    &__text {
+      margin-bottom: 30px;
+    }
+    &__img-wrapper {
+      width: 360px;
+      margin-left: 0;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .about {
+    &__inner {
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+    &__info {
+      margin-top: 0;
+      flex: 0 1 auto;
+      margin-bottom: 85px;
+    }
+    &__img-wrapper {
+      margin-left: 0;
+      max-width: 310px;
+    }
+    &__swiper-button-prev {
+      left: -15px;
+      width: 40px;
+      height: 40px;
+    }
+    &__swiper-button-next {
+      right: -15px;
+      width: 40px;
+      height: 40px;
+    }
+    &__swiper-icon-wrapper {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    max-width: 100%;
+  }
+  .offer {
+    &__title {
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .page {
+    &__offer {
+      padding-bottom: 450px;
+    }
+  }
+  .offer {
+    &__img-wrapper {
+      max-width: 320px;
+    }
+    &__man-name {
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 328px) {
+  .offer {
+    &__span-1 {
+      &::after {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+    }
+    &__span-2 {
+      &::after {
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        left: 1px !important;
+        width: 109% !important;
+      }
+    }
+  }
+}

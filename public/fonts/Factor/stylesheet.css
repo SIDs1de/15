@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Factor A';
+    src: url('FactorA-Bold.eot');
+    src: local('Factor A Bold'), local('FactorA-Bold'),
+        url('FactorA-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FactorA-Bold.woff2') format('woff2'),
+        url('FactorA-Bold.woff') format('woff'),
+        url('FactorA-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
