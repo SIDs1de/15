@@ -107,9 +107,33 @@ document.addEventListener('DOMContentLoaded', () => {
   const animations = () => {
     new WOW().init();
   };
+
+  const endTime = '2022-08-10';
+  const discountHour = document.querySelector('.discount__hour');
+  const discountMinut = document.querySelector('.discount__minut');
+  const discountSecound = document.querySelector('.discount__secound');
+  const timer = () => {
+    const end = new Date(endTime);
+    setInterval(() => {
+      const now = new Date();
+      const nowMs = now.getTime();
+      const endMs = end.getTime();
+      const diffMs = endMs - nowMs;
+      const diffHrs = Math.floor(diffMs / 1000 / 60 / 60);
+      const diffMnts = Math.floor(diffMs / 1000 / 60 - diffHrs * 60);
+      const diffScnds = Math.floor(
+        diffMs / 1000 - diffHrs * 3600 - diffMnts * 60
+      );
+      discountHour.innerHTML = diffHrs;
+      discountMinut.innerHTML = diffMnts;
+      discountSecound.innerHTML = diffScnds;
+    }, 1000);
+  };
+
   swiper();
   animations();
   accordion();
   navigation();
   openPopup();
+  timer();
 });
