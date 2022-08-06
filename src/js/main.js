@@ -113,20 +113,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const discountMinut = document.querySelector('.discount__minut');
   const discountSecound = document.querySelector('.discount__secound');
   const timer = () => {
-    const end = new Date(endTime);
+    // const end = new Date(endTime);
     setInterval(() => {
       const now = new Date();
-      const nowMs = now.getTime();
-      const endMs = end.getTime();
-      const diffMs = endMs - nowMs;
-      const diffHrs = Math.floor(diffMs / 1000 / 60 / 60);
-      const diffMnts = Math.floor(diffMs / 1000 / 60 - diffHrs * 60);
-      const diffScnds = Math.floor(
-        diffMs / 1000 - diffHrs * 3600 - diffMnts * 60
+      // const nowMs = now.getTime();
+      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      // console.log(now - today);
+      const diffMs = now - today;
+      // const endMs = now.getDate() + 1;
+      // console.log(now.getDate());
+
+      const nowHrs = Math.floor(diffMs / 1000 / 60 / 60);
+      const nowMnts = Math.floor(diffMs / 1000 / 60 - nowHrs * 60);
+      const nowScnds = Math.floor(
+        diffMs / 1000 - nowHrs * 3600 - nowMnts * 60
       );
-      discountHour.innerHTML = diffHrs;
-      discountMinut.innerHTML = diffMnts;
-      discountSecound.innerHTML = diffScnds;
+      discountHour.innerHTML = 23 - nowHrs;
+      discountMinut.innerHTML = 59 - nowMnts;
+      discountSecound.innerHTML = 59 - nowScnds;
     }, 1000);
   };
 
