@@ -12,27 +12,41 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="author" content="SIDs1de (Igor Denisenkov)">
-  <meta name="image" content=""> <!-- logo -->
+  <meta name="image" content="images/global/prev.jpg"> <!-- Preview -->
 
   <!-- For social networks -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="">
+  <meta property="og:title" content="Coure 1">
   <meta property="og:description" content="">
-  <meta property="og:image" content=""> <!-- logo -->
-  <meta property="og:image:width" content="">
-  <meta property="og:image:height" content="">
+  <meta property="og:image" content="images/global/prev.jpg"> <!-- Preview -->
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:url" content="">
   <meta property="og:locale" content="ru_ru">
-  <meta property="og:site_name" content="">
-
-  <link rel="canonical" href="#"> <!-- Address without additional parameters -->
+  <meta property="og:site_name" content="Coure 1">
 
   <!-- ICONS -->
 
-  <!-- Favicon generator https://www.favicon-generator.org/ -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/global/icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/global/icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/global/icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/global/icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/global/icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/global/icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/global/icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/global/icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/global/icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/global/icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/global/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/global/icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/global/icon/favicon-16x16.png">
+  <link rel="manifest" href="images/global/icon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/global/icon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
 
-  <meta name="apple-mobile-web-app-title" content="Название"> <!-- Name on the phone screen -->
+  <meta name="apple-mobile-web-app-title" content="Coure 1"> <!-- Name on the phone screen -->
   <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Opening the site to full screen -->
 
   <meta name="format-detection" content="telephone=no"> <!-- No need for extra illumination -->
@@ -116,7 +130,7 @@
             бизнес-плана<br>до оцифровки и масштабирования
           </p>
           <div class="offer__btns-wrapper">
-            <a class="offer__btn default-btn" href="#">принять участие</a>
+            <a class="offer__btn default-btn" href="#" data-open-pop="1">принять участие</a>
             <a class="offer__btn-video" href="#" data-open-pop="youtube-video">Видео-рассказ<br>о программе курса</a>
           </div>
         </div>
@@ -353,7 +367,7 @@
             Скидка 50% по промокоду «SKYNET»
           </h2>
           <div class="discount__info-btns-wrapper">
-            <a class="discount__buy-btn discount__buy-btn--max-text" href="#">
+            <a class="discount__buy-btn discount__buy-btn--max-text" href="#" data-open-pop="1">
               Купить курс сейчас
             </a>
             <a class="discount__buy-btn discount__buy-btn--mini-text" href="#">
@@ -495,7 +509,7 @@
         </ol>
       </div>
       <div class="program__btn-wrapper">
-        <a class="default-btn program__btn" href="#">Получить курс</a>
+        <a class="default-btn program__btn" href="#" data-open-pop="1">Получить курс</a>
       </div>
     </div>
   </section>
@@ -620,7 +634,7 @@
           тебя на личную консультацию
         </p>
         <div class="meet__price-btn-wrapper">
-          <a class="meet__btn default-btn" href="#">Запустить бизнес</a>
+          <a class="meet__btn default-btn" href="#" data-open-pop="1">Запустить бизнес</a>
           <div class="meet__price-wrapper">
             <p class="meet__no-discount-price">
               30 000 ₽
@@ -712,14 +726,132 @@
   <div class="popup popup__iframe" data-pop="youtube-video">
     <div class="popup__inner popup__iframe-inner popup__inner--transparent">
       <div class="popup__body popup__body-iframe">
-        <iframe class="popup__iframe" width="560" height="315" src="https://www.youtube.com/embed/uj0Dibq_bGs" title="YouTube video player"
-          frameborder="0"
+        <iframe class="popup__iframe" width="560" height="315" src="https://www.youtube.com/embed/uj0Dibq_bGs"
+          title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
     </div>
 
     <div class="popup__bg" data-close="youtube-video"></div>
+  </div>
+
+  <div class="popup" data-pop="1">
+    <div class="popup__inner">
+      <div class="popup__body">
+        <h3 class="popup__title">
+          Получить скидку
+        </h3>
+        <form class="popup__form form" action="#" method="post" name="popup-form">
+          <input class="popup__input input" type="text" placeholder="Введите промокод" name="promo">
+          <div class="popup__btn-wrapper btn-wrapper">
+            <button class="popup__btn btn" type="submit" name="sub">
+              Отправить
+            </button>
+            <a class="popup__link link" href="#">
+              Купить без промокода
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="popup__bg" data-close="1"></div>
+  </div>
+
+  <div class="popup" data-pop="2">
+    <div class="popup__inner">
+      <div class="popup__body">
+        <h3 class="popup__title">
+          Ваш промокод принят
+        </h3>
+        <p class="popup__par popup__par--mini-margin">
+          Стоимость с промокодом — <span>2490&nbsp;руб</span>
+        </p>
+        <div class="popup__list">
+          <div class="popup__item">
+            <a href="#">
+              <img class="popup__img" src="images/popup/tg.svg" alt="">
+              <p class="popup__text">Перейдите<br>в бот</p>
+            </a>
+          </div>
+          <div class="popup__item">
+            <a href="#">
+              <img class="popup__img" src="images/popup/card.svg" alt="">
+              <p class="popup__text">Совершите<br>оплату</p>
+            </a>
+          </div>
+          <div class="popup__item">
+            <a href="#">
+              <img class="popup__img" src="images/popup/check.svg" alt="">
+              <p class="popup__text">Получайте<br>контент</p>
+            </a>
+          </div>
+        </div>
+        <div class="popup__btn-wrapper btn-wrapper btn-wrapper--mt">
+          <button class="popup__btn btn">Начать обучение</button>
+        </div>
+      </div>
+    </div>
+    <div class="popup__bg" data-close="2"></div>
+  </div>
+
+  <div class="popup" data-pop="3">
+    <div class="popup__inner">
+      <div class="popup__body">
+        <img class="popup__big-img" src="images/popup/no.svg" alt="">
+        <h3 class="popup__title popup__title--mini-margin">
+          Неправильный промокод
+        </h3>
+        <div class="popup__btn-wrapper btn-wrapper">
+          <button class="popup__btn btn" type="submit" name="sub">
+            Купить без промокода
+          </button>
+          <a class="popup__link link" href="#">
+            Попробовать ещё раз
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="popup__bg" data-close="3"></div>
+  </div>
+
+  <div class="popup active" data-pop="4">
+    <div class="popup__inner">
+      <div class="popup__body">
+        <p class="popup__par">
+          Стоимость — <span>2490&nbsp;руб</span>
+        </p>
+        <h3 class="popup__title popup__title--mini-margin">
+          Чтобы продолжить:
+        </h3>
+        <div class="popup__list popup__list--mb">
+          <div class="popup__item">
+            <a href="#">
+              <img class="popup__img" src="images/popup/tg.svg" alt="">
+              <p class="popup__text">Перейдите<br>в бот</p>
+            </a>
+          </div>
+          <div class="popup__item">
+            <a href="#">
+              <img class="popup__img" src="images/popup/card.svg" alt="">
+              <p class="popup__text">Совершите<br>оплату</p>
+            </a>
+          </div>
+          <div class="popup__item">
+            <a href="#">
+              <img class="popup__img" src="images/popup/check.svg" alt="">
+              <p class="popup__text">Получайте<br>контент</p>
+            </a>
+          </div>
+        </div>
+        <div class="popup__btn-wrapper btn-wrapper">
+          <button class="popup__btn btn">
+            Начать обучение
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup__bg" data-close="4"></div>
   </div>
 
   <script src="js/modernizr-custom.js"></script>
